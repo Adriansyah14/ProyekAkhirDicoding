@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from babel.numbers import format_currency
 import seaborn as sns
 sns.set(style='dark')
 
-# helper functionaa
+# helper function
 
 def create_daily_orders_df(df):
     daily_orders_df = df.resample(rule='D', on='order_approved_at').agg({
@@ -86,7 +85,7 @@ max_date = all_df["order_approved_at"].max()
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("https://raw.githubusercontent.com/Adriansyah14/ProyekAkhirDicoding/refs/heads/main/logo1.png")
+    st.image("https://raw.githubusercontent.com/Adriansyah14/ProyekAkhirDicoding/90add95535337ae6beba8467a7014d3a563bb7df/logo1.png")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
