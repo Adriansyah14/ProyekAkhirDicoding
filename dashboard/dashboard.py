@@ -62,7 +62,7 @@ def create_bystate_df(df):
     return bystate_df
 
 # load cleaned data 
-all_df = pd.read_csv("hasil_merge.csv")
+all_df = pd.read_csv("E:\LATIHAN DICODING (Data Science)\E-commerce-public-dataset\submission\dashboard\hasil_merge.csv")
 
 datetime_columns = ["order_approved_at", "order_delivered_customer_date"]
 all_df.sort_values(by="order_approved_at", inplace=True)
