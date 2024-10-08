@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 import seaborn as sns
 sns.set(style='dark')
 
-# helper function
+# helper functionaa
 
 def create_daily_orders_df(df):
     daily_orders_df = df.resample(rule='D', on='order_approved_at').agg({
